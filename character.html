@@ -1,0 +1,279 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Strinova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styles.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-2 flex justify-between items-center fixed top-0 left-0 w-full z-50">
+        <div class="flex items-center">
+            <img alt="Strinova Logo" class="h-10 w-10" height="40"
+                src="https://storage.googleapis.com/a1aa/image/Bk1UXREeTJzxFKRRYKxLHeM6iTe4IXos8DIAojmcIefn7b6eE.jpg"
+                width="40" />
+            <span class="text-orange-500 text-2xl font-bold ml-2">STRINOVA</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+            <a class="text-white hover:text-orange-500" href="./main.html">TRANG CHỦ</a>
+            <a class="text-white hover:text-orange-500" href="#">NẠP THẺ</a>
+            <a class="text-white hover:text-orange-500" href="#">VẬT PHẨM GAME </a>
+            <a class="text-white hover:text-orange-500" href="#">MAP GAME</a>
+            <a class="text-white hover:text-orange-500" href="#">HƯỚNG DẪN CHƠI GAME </a>
+            <a class="text-white hover:text-orange-500" href="./character.html">NHÂN VẬT CỦA BẠN</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="bg-orange-500 text-white px-4 py-2 rounded-md">LOGIN IN</button>
+        </div>
+    </nav>
+
+    <section class="relative min-h-[120vh] flex items-center justify-center text-center bg-cover bg-center">
+        <div class="flex w-full min-h-[120vh] bg-white pt-16">
+            <!-- Nửa bên trái: Hình nhân vật -->
+            <div class="w-1/2 flex flex-col items-center p-8 text-black">
+                <h1 class="text-4xl font-bold mb-4">NHÂN VẬT CỦA BẠN</h1>
+                <img class="w-64 h-64 rounded-full border-4 border-orange-500 mb-4"
+                    src="https://scontent.fsgn20-1.fna.fbcdn.net/v/t39.30808-1/465723225_876403634597513_6692760296846332254_n.jpg?stp=dst-jpg_s200x200&_nc_cat=105&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeFA_vS-8F10yD2ddE75UGweUM17KBmPs0VQzXsoGY-zRWqz4QWa4nZ4i3A1U85aKZLqUpVSPWM-B3HiQz7F2Eg2&_nc_ohc=HKHaeFMvDN4Q7kNvgE6WlaB&_nc_zt=24&_nc_ht=scontent.fsgn20-1.fna&_nc_gid=ACmYNeXaEFkREuVqbcvFO1y&oh=00_AYDvWrxGiBSvYP7FxvmOnBHA4EiR0V8Hs2iGzjK40hJA-g&oe=6755F062"
+                    alt="Character Image">
+                <h2 class="text-2xl font-semibold">Phan V.Hoàng </h2>
+                <p class="text-lg mt-2">Level: 35</p>
+                
+                <!-- Progress bar for experience -->
+                <div class="w-full mt-4 p-8">
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <span class="text-sm font-semibold">Kinh Nghiệm : 12,345 / 20,000</span>
+                        </div>
+                        <div class="flex mb-2">
+                            <div class="w-full bg-gray-300 rounded-full h-2.5">
+                                <div class="bg-green-500 h-2.5 rounded-full" style="width: 61.75%"></div>
+                                <!-- 12,345 / 20,000 = 61.75% -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Phần Thông tin nhân vật được bao bọc -->
+            
+            <div class="w-1/2 bg-white h-full rounded-lg shadow-lg m-6 p-6 border-2 border-black">
+                <h2 class="text-4xl font-bold mb-4 text-center text-gray-800">THÔNG TIN</h2>
+
+                <!-- Thông tin vàng và kim cương -->
+                <div class="grid grid-cols-2 gap-4 mb-8 text-left text-gray-700 m-8">
+                    <div class="relative group">
+                        <i class="fas fa-coins text-yellow-500 text-2xl "></i> <!-- Coin icon for gold -->
+                        <p class="font-semibold text-gray-500 ">Vàng : 2000</p>
+
+                    </div>
+                    <div class="relative group">
+                        <i class="fas fa-gem text-blue-500 text-2xl "></i><p class="font-semibold text-gray-500 ">Kim Cương : 50</p> <!-- Diamond icon for diamonds -->
+                        
+
+                    </div>
+                </div>
+
+                <!-- Thông số cơ bản -->
+<div class="grid grid-cols-2 gap-4 mb-8 text-left text-gray-700 m-8">
+    <div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-heart text-red-500 mr-2"></i> <!-- Heart icon for health -->
+            <p><strong>Máu:</strong> 1500</p>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-tint text-blue-500 mr-2"></i> <!-- Water droplet icon for mana -->
+            <p><strong>Mana:</strong> 800</p>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-fist-raised text-yellow-500 mr-2"></i> <!-- Fist icon for attack -->
+            <p><strong>Tấn công:</strong> 250</p>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-shield-alt text-gray-500 mr-2"></i> <!-- Shield icon for defense -->
+            <p><strong>Giáp:</strong> 100</p>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-crosshairs text-purple-500 mr-2"></i> <!-- Crosshairs icon for accuracy -->
+            <p><strong> Chính xác:</strong> 90%</p>
+        </div>
+    </div>
+    <div>
+        <div class="flex items-center mb-2 ">
+            <i class="fas fa-running text-green-500 mr-2"></i> <!-- Running icon for speed -->
+            <p><strong>Tốc chạy:</strong> 350</p>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-bolt text-orange-500 mr-2"></i> <!-- Bolt icon for critical rate -->
+            <p><strong>Tỉ lệ chí mạng:</strong> 20%</p>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-fire text-cyan-500 mr-2"></i> <!-- Fire icon for critical damage -->
+            <p><strong>Sát thương chí mạng:</strong> 200%</p>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-dove text-black-500 mr-2"></i><!-- Shield Virus icon for dodge -->
+            <p><strong>Tỉ lệ né :</strong> 15%</p>
+        </div>
+        
+        <div class="flex items-center mb-2">
+            <i class="fas fa-pills text-pink-500 mr-2"></i> <!-- Bed icon for damage reduction -->
+            <p><strong>Giảm thương:</strong> 10%</p>
+        </div>
+    </div>
+</div>
+
+                <!-- Hình trang bị với nền sáng -->
+                <div class="flex justify-around mt-4 rounded-lg p-4">
+                    <h2 class="text-3xl font-bold mb-4 text-center text-gray-800 p-4">Trang Bị :</h2>
+                    <!-- Trang bị 1 -->
+                    <div class="relative group">
+                        <img class="w-16 h-16"
+                            src="https://i.pinimg.com/474x/7b/ba/77/7bba77b76f18d3a451f04d4088ce710b.jpg" alt="Item 1">
+                        <div
+                            class="hidden group-hover:block absolute p-4 rounded-lg text-sm w-48 transform -translate-x-16 mt-2 bg-gray-800 text-white">
+                            <p><strong>Trang bị 1</strong></p>
+                            <p>+50 Sát thương</p>
+                            <p>Nội tại: Tăng 10% tốc độ đánh</p>
+                            <p>Giá: 2000 vàng</p>
+                        </div>
+                    </div>
+                    <!-- Trang bị 2 -->
+                    <div class="relative group">
+                        <img class="w-16 h-16"
+                            src="https://i.pinimg.com/474x/e7/49/2f/e7492fc59a2fd9ed397958317dba4f0c.jpg" alt="Item 2">
+                        <div
+                            class="hidden group-hover:block absolute p-4 rounded-lg text-sm w-48 transform -translate-x-16 mt-2 bg-gray-800 text-white">
+                            <p><strong>Trang bị 2</strong></p>
+                            <p>+30 Giáp</p>
+                            <p>Nội tại: Giảm sát thương nhận vào 5%</p>
+                            <p>Giá: 1500 vàng</p>
+                        </div>
+                    </div>
+                    <!-- Các trang bị khác tương tự -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Background Audio -->
+    <audio id="background-audio" loop>
+        <source src="./assets/Believe.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Cookie Notice -->
+    <div id="cookie-notice" class="fixed bottom-0 w-full bg-gray-800 text-gray-400 text-center p-4">
+        <span>This website uses cookies to enhance your browsing experience.
+            <a class="text-orange-500" href="#">Learn More</a>
+        </span>
+        <button id="cookie-ok-btn" class="bg-orange-500 text-white px-4 py-2 ml-4 rounded-md">OK</button>
+    </div>
+
+    <div class="bg-black text-white">
+        <footer class="bg-black text-white py-4">
+            <div class="container mx-auto text-center">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        <i class="fab fa-facebook-f">
+                        </i>
+                    </a>
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        <i class="fab fa-xing">
+                        </i>
+                    </a>
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        <i class="fab fa-youtube">
+                        </i>
+                    </a>
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        <i class="fab fa-discord">
+                        </i>
+                    </a>
+                </div>
+                <div class="flex justify-center space-x-8 mb-4">
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        TERMS OF SERVICE
+                    </a>
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        PRIVACY POLICY
+                    </a>
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        DATA TRANSFER POLICY
+                    </a>
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        ABOUT US
+                    </a>
+                    <a class="text-gray-400 hover:text-white" href="#">
+                        CONTACT US
+                    </a>
+                </div>
+                <div class="flex justify-center space-x-8 mb-4">
+                    <img alt="Strinova logo" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/SueaBoZafDvo40bLGfApr4hShJcXV36v6E1vUEuDfFLoUldPB.jpg"
+                        width="100" />
+                    <img alt="iDreamSky logo" height="50"
+                        src="https://storage.googleapis.com/a1aa/image/mW5r6Glx4eWgDCoF8C8FpYfUQclHLLOriLGjvk7THz6NVZ3TA.jpg"
+                        width="100" />
+                </div>
+                <div class="text-gray-400 mb-4">
+                    <p>
+                        Address: FLAT/RM 2609, China Resources Building, 26 Harbour Road, Wanchai, Hong Kong
+                    </p>
+                    <p>
+                        Email: service01@strinova.com
+                    </p>
+                    <p>
+                        Copyright©2020-2024 IDS/KSH. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Kiểm tra nếu người dùng đã chấp nhận cookie trước đó
+        // Hàm tạo cookie tạm thời (Session Cookie)
+        function setSessionCookie(name, value) {
+            document.cookie = `${name}=${value}; path=/`;
+        }
+
+        // Hàm kiểm tra xem cookie đã được chấp nhận chưa
+        function getSessionCookie(name) {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.startsWith(name + '=')) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        // Kiểm tra nếu người dùng đã chấp nhận cookie trước đó
+        if (getSessionCookie('cookiesAccepted')) {
+            document.getElementById('cookie-notice').style.display = 'none';
+        }
+
+        // Ẩn thông báo và lưu trạng thái chấp nhận trong session
+        document.getElementById('cookie-ok-btn').addEventListener('click', function () {
+            document.getElementById('cookie-notice').style.display = 'none';
+            setSessionCookie('cookiesAccepted', 'true');
+        });
+
+
+        // Toggle the settings dropdown menu
+        document.querySelector('.relative button').addEventListener('click', function () {
+            document.querySelector('.relative .absolute').classList.toggle('hidden');
+        });
+
+        // Music toggle play/pause
+     
+    </script>
+</body>
+
+</html>

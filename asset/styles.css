@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* Navbar */
+  nav {
+    transition: background-color 0.3s ease;
+  }
+  
+  nav:hover {
+    background-color: #4a5568;
+  }
+  
+  nav a {
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #f39c12;
+  }
+  
+  /* Nút Settings dropdown */
+  .relative .absolute {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+ 
+  
+  /* Hiệu ứng cho chi tiết trang bị */
+  .group:hover .group-hover\\:block {
+    display: block !important;
+  }
+  
+  .relative .hidden {
+    display: none;
+  }
+  
+  .group:hover .hidden {
+    display: block;
+  }
+  
+  /* Hiệu ứng chung cho section */
+  section {
+    transition: all 0.5s ease-in-out; /* Hiệu ứng mượt mà khi chuyển động */
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* Hiệu ứng Fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Hiệu ứng hover cho các ảnh nhân vật */
+  img:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hiệu ứng hover cho các thẻ chứa thông tin */
+  div:hover {
+   
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Thêm đổ bóng */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hiệu ứng cho các thẻ chứa thông tin nhân vật */
+  h1, h2, p {
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+  }
+  
+  h1, h2 {
+   
+    font-family: 'Arial', sans-serif;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hiệu ứng tăng dần cho các thẻ văn bản */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hiệu ứng cho các nút hoặc thẻ khi hover */
+  button:hover {
+    background-color: #4A90E2; /* Chuyển màu khi hover */
+    transform: scale(1.05); /* Phóng to nút khi hover */
+    transition: all 0.3s ease;
+  }
+  
+  /* Hiệu ứng khi di chuột vào các phần trong nhóm trang bị */
+  .relative:hover .group-hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Hiệu ứng cho các item trang bị */
+  .relative img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .relative img:hover {
+    transform: scale(1.2); /* Phóng to ảnh trang bị khi hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng cho ảnh */
+  }
+  
+  /* Thêm hiệu ứng cho text trong các phần thông tin */
+  h2, .text-gray-800 {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  h2:hover, .text-gray-800:hover {
+    transform: scale(1.05); /* Phóng to khi hover */
+  }
+  
+  /* Thêm hiệu ứng cho các section thông tin */
+  section .flex > div {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    transform: translateY(50px);
+  }
+  
+  section .flex > div:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  section .flex > div:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  section .flex > div:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  

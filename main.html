@@ -1,0 +1,190 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Strinova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-2 flex justify-between items-center fixed top-0 left-0 w-full z-50">
+      <div class="flex items-center">
+        <img alt="Strinova Logo" class="h-10 w-10" height="40" src="https://storage.googleapis.com/a1aa/image/Bk1UXREeTJzxFKRRYKxLHeM6iTe4IXos8DIAojmcIefn7b6eE.jpg" width="40"/>
+        <span class="text-orange-500 text-2xl font-bold ml-2">STRINOVA</span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a class="text-white hover:text-orange-500" href="./main.html">TRANG CHỦ</a>
+        <a class="text-white hover:text-orange-500" href="#">NẠP THẺ</a>
+        <a class="text-white hover:text-orange-500" href="#">VẬT PHẨM GAME </a>
+        <a class="text-white hover:text-orange-500" href="#">MAP GAME</a>
+        <a class="text-white hover:text-orange-500" href="#">HƯỚNG DẪN CHƠI GAME </a>
+        <a class="text-white hover:text-orange-500" href="./character.html">NHÂN VẬT CỦA BẠN</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button class="bg-orange-500 text-white px-4 py-2 rounded-md">LOGIN IN</button>
+      </div>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://storage.googleapis.com/a1aa/image/Nsz3k1egpHVPcaryz7Pkn4EeAmWpiAoC4QrOMmcfl4eBeb6eE.jpg');">
+        <div class="flex w-full h-full bg-black bg-opacity-50">
+          <!-- Cột Video bên trái -->
+          <div class="w-1/2 flex items-center justify-center p-8">
+            <iframe class="w-full max-w-[90%] h-auto aspect-video mx-auto" src="https://www.youtube.com/embed/sqHpc_A0cdE" title="BEYBLADE BURST: Opening Theme ‘Our Time’" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        
+          <!-- Cột Nội dung bên phải -->
+          <div class="w-1/2 flex flex-col justify-center items-center text-white p-8">
+            <h1 class="text-6xl font-bold mb-4">STRINOVA</h1>
+            <p class="text-xl mt-2">NEXT-GEN ANIME SHOOTER</p>
+            <a href="https://docs.google.com/spreadsheets/d/1s9oH2-bpnVXrtKj7MFltviVfvvbV7VS4phxtDrxMYzw/export?format=csv" download>
+              <button class="bg-orange-500 text-white px-6 py-3 mt-6 rounded-md text-lg">
+                DOWNLOAD SHEET
+              </button>
+            </a>
+            <div class="flex justify-center space-x-4 mt-4">
+              <img alt="Steam Logo" class="h-10 w-10" src="https://storage.googleapis.com/a1aa/image/TGv7VUyH8ezsXalrb5AuvF4EftnFxxy2VWok9uBoAff79NdPB.jpg" />
+              <img alt="Epic Store Logo" class="h-10 w-10" src="https://storage.googleapis.com/a1aa/image/1UWaBae8afvJjk5NnAuZ3pEwLpyA6N5Si9oWlGYk1W8dfmunA.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+    <!-- Social Media Links -->
+    <div class="fixed right-4 top-1/2 transform -translate-y-1/2 space-y-4">
+      <a class="block text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+      <a class="block text-white" href="#"><i class="fab fa-twitter"></i></a>
+      <a class="block text-white" href="#"><i class="fab fa-youtube"></i></a>
+      <a class="block text-white" href="#"><i class="fab fa-discord"></i></a>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="background-audio" loop>
+      <source src="./assets/Believe.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Cookie Notice -->
+    <div id="cookie-notice" class="fixed bottom-0 w-full bg-gray-800 text-gray-400 text-center p-4">
+      <span>This website uses cookies to enhance your browsing experience.
+        <a class="text-orange-500" href="#">Learn More</a>
+      </span>
+      <button id="cookie-ok-btn" class="bg-orange-500 text-white px-4 py-2 ml-4 rounded-md">OK</button>
+    </div>
+   
+    <div class="bg-black text-white">
+        <footer class="bg-black text-white py-4">
+         <div class="container mx-auto text-center">
+          <div class="flex justify-center space-x-4 mb-4">
+           <a class="text-gray-400 hover:text-white" href="#">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a>
+           <a class="text-gray-400 hover:text-white" href="#">
+            <i class="fab fa-xing">
+            </i>
+           </a>
+           <a class="text-gray-400 hover:text-white" href="#">
+            <i class="fab fa-youtube">
+            </i>
+           </a>
+           <a class="text-gray-400 hover:text-white" href="#">
+            <i class="fab fa-discord">
+            </i>
+           </a>
+          </div>
+          <div class="flex justify-center space-x-8 mb-4">
+           <a class="text-gray-400 hover:text-white" href="#">
+            TERMS OF SERVICE
+           </a>
+           <a class="text-gray-400 hover:text-white" href="#">
+            PRIVACY POLICY
+           </a>
+           <a class="text-gray-400 hover:text-white" href="#">
+            DATA TRANSFER POLICY
+           </a>
+           <a class="text-gray-400 hover:text-white" href="#">
+            ABOUT US
+           </a>
+           <a class="text-gray-400 hover:text-white" href="#">
+            CONTACT US
+           </a>
+          </div>
+          <div class="flex justify-center space-x-8 mb-4">
+           <img alt="Strinova logo" height="50" src="https://storage.googleapis.com/a1aa/image/SueaBoZafDvo40bLGfApr4hShJcXV36v6E1vUEuDfFLoUldPB.jpg" width="100"/>
+           <img alt="iDreamSky logo" height="50" src="https://storage.googleapis.com/a1aa/image/mW5r6Glx4eWgDCoF8C8FpYfUQclHLLOriLGjvk7THz6NVZ3TA.jpg" width="100"/>
+          </div>
+          <div class="text-gray-400 mb-4">
+           <p>
+            Address: FLAT/RM 2609, China Resources Building, 26 Harbour Road, Wanchai, Hong Kong
+           </p>
+           <p>
+            Email: service01@strinova.com
+           </p>
+           <p>
+            Copyright©2020-2024 IDS/KSH. ALL RIGHTS RESERVED.
+           </p>
+          </div>
+          
+         </div>
+        </footer>
+    </div>
+    <script>
+      // Kiểm tra nếu người dùng đã chấp nhận cookie trước đó
+// Hàm tạo cookie tạm thời (Session Cookie)
+function setSessionCookie(name, value) {
+  document.cookie = `${name}=${value}; path=/`;
+}
+
+// Hàm kiểm tra xem cookie đã được chấp nhận chưa
+function getSessionCookie(name) {
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim();
+    if (cookie.startsWith(name + '=')) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Kiểm tra nếu người dùng đã chấp nhận cookie trước đó
+if (getSessionCookie('cookiesAccepted')) {
+  document.getElementById('cookie-notice').style.display = 'none';
+}
+
+// Ẩn thông báo và lưu trạng thái chấp nhận trong session
+document.getElementById('cookie-ok-btn').addEventListener('click', function() {
+  document.getElementById('cookie-notice').style.display = 'none';
+  setSessionCookie('cookiesAccepted', 'true');
+});
+
+
+      // Toggle the settings dropdown menu
+      document.querySelector('.relative button').addEventListener('click', function() {
+        document.querySelector('.relative .absolute').classList.toggle('hidden');
+      });
+
+      // Music toggle play/pause
+      document.getElementById('music-toggle').addEventListener('click', function() {
+        var audio = document.getElementById('background-audio');
+        var musicIcon = document.getElementById('music-icon');
+        
+        if (audio.paused) {
+          audio.play();
+          musicIcon.classList.remove('fa-play');
+          musicIcon.classList.add('fa-pause');
+        } else {
+          audio.pause();
+          musicIcon.classList.remove('fa-pause');
+          musicIcon.classList.add('fa-play');
+        }
+      });
+    </script>
+  </body>
+  
+</html>
